@@ -1,0 +1,204 @@
+/* style.css */
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    background-color: #191e29;
+    color: #333;
+}
+
+/* Header and Navbar */
+.header {
+    background-color: #132d46;
+    padding: 10px 20px;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar .logo {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    transition: background-color 0.3s;
+}
+
+.navbar ul li a:hover {
+    background-color: #34495e;
+    border-radius: 5px;
+}
+
+/* Status Container */
+.status-container {
+    padding: 10px 20px;
+    margin: 20px auto;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    width: fit-content;
+}
+
+.status.success {
+    color: green;
+}
+
+.status.error {
+    color: red;
+}
+
+/* Container */
+.container {
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Table */
+.table-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.page-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.page-title {
+    font-size: 1.4rem;
+}
+
+.add-btn {
+    padding: 10px 20px;
+    background-color: #01c38d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.add-btn:hover {
+    background-color: #2980b9;
+}
+
+/* Search and Filter */
+.search-filter {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.search-filter input,
+.search-filter select {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+thead th {
+    background-color: #132d46;
+    color: white;
+    padding: 10px;
+}
+
+tbody td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Modal Styling */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    background-color: white;
+    margin: 10% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    border-radius: 10px;
+    width: 50%;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Form Grid */
+.form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+/* Button Styling */
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #01c38d;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
